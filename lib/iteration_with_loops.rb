@@ -4,11 +4,12 @@ def join_nested_strings(src)
   while row_index < src.count do
     inner_index = 0
     while element_index < src[row_index].count do
-      if src[row_index][element_index].class == String
-        nested_string = src[row_index][inner_index].join('')
+      if src[row_index][inner_index].class == String
+      nested_string = scr[row_index][inner_index]
       end
       element_index
     end
+    nested_string = src[row_index][inner_index].join('')
     row_index += 1
   end
   nested_string
