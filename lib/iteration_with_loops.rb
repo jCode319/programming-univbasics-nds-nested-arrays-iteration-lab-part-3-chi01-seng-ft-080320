@@ -7,7 +7,7 @@ def join_nested_strings(src)
       if src[row_index][inner_index].class == String
       nested_string << scr[row_index][inner_index].join("")
       end
-      element_index
+      inner_index
     end
     row_index += 1
   end
